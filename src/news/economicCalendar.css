@@ -1,0 +1,89 @@
+@reference "../index.css";
+
+/* Container and Card */
+.calendar-container {
+    @apply w-full max-w-7xl mx-auto px-4 py-8;
+}
+
+.calendar-card {
+    @apply overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm;
+}
+
+.calendar-scroll {
+    @apply overflow-x-auto;
+}
+
+.calendar-table {
+    @apply w-full text-left text-sm text-slate-600;
+}
+
+/* Table Header */
+.calendar-thead {
+    @apply border-b border-slate-200 bg-slate-50/80 text-xs font-semibold uppercase tracking-wider text-slate-500;
+}
+
+.calendar-th {
+    @apply py-4 px-4 font-semibold;
+}
+
+.calendar-th-center {
+    @apply py-4 px-4 font-semibold text-center;
+}
+
+/* Table Body */
+.calendar-tbody {
+    @apply divide-y divide-slate-100;
+}
+
+.calendar-row {
+    @apply transition-colors hover:bg-slate-50/70;
+}
+
+.calendar-td {
+    @apply py-3.5 px-4 text-slate-500;
+}
+
+.calendar-td-mono {
+    @apply py-3.5 px-4 font-mono text-xs text-slate-500 whitespace-nowrap;
+}
+
+.calendar-td-country {
+    @apply py-3.5 px-4 font-semibold text-slate-800;
+}
+
+.calendar-td-name {
+    @apply py-3.5 px-4 font-medium text-slate-900;
+}
+
+.calendar-td-currency {
+    @apply py-3.5 px-4 font-semibold text-slate-700;
+}
+
+.calendar-td-actual {
+    @apply py-3.5 px-4 font-semibold text-slate-900;
+}
+
+.calendar-td-type {
+    @apply py-3.5 px-4 text-slate-500 capitalize;
+}
+
+.calendar-td-center {
+    @apply py-3.5 px-4 text-center;
+}
+
+/* Importance Badges */
+.badge-importance {
+    @apply inline-block px-2.5 py-1 rounded-full text-[11px] font-semibold uppercase tracking-wider;
+}
+
+.badge-high {
+    @apply bg-rose-50 text-rose-600 border border-rose-200;
+}
+
+.badge-medium {
+    @apply bg-amber-50 text-amber-600 border border-amber-200;
+}
+
+.badge-low {
+    @apply bg-slate-100 text-slate-500 border border-slate-200;
+}

@@ -13,18 +13,11 @@ export default function News() {
             .catch(err => console.error(err))
     }, [])
 
-    const formatDate = (isoString) => {
-        if (!isoString) return "";
-        return new Date(isoString).toLocaleDateString("fr-FR", {
-            day: "numeric",
-            month: "short",
-            year: "numeric",
-        });
-    };
+
 
     return (
         <>
-            <NewsContext.Provider value={{ news, formatDate }}>
+            <NewsContext.Provider value={{ news}}>
                 <NewsCard />
             </NewsContext.Provider>
         </>

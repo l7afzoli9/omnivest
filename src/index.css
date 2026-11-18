@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-ticker {
+  display: flex;
+  width: max-content;
+  animation: scroll 35s linear infinite;
+}
+
+.animate-ticker:hover {
+  animation-play-state: paused; /* pauses on mouse hover so user can read/click! */
+}
+
+.mask-fade-edges {
+  mask-image: linear-gradient(
+    to right,
+    transparent 0px,
+    black 240px,
+    black calc(100% - 140px),
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0px,
+    black 240px,
+    black calc(100% - 140px),
+    transparent 100%
+  );
+}
